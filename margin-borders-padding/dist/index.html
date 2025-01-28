@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins, Borders and Padding in Tailwind CSS</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-DmwCfUmg.css">
+</head>
+<body>
+    <!-- Space between property -->
+    <nav>
+        <!-- Navigation list with a flex container and horizontal spacing between items -->
+        <ul class="flex space-x-3">
+            <li></li>
+            <!-- The 'space-x-3' class does not apply spacing before the first item, so to avoid that you can use an empty list at the beginning. -->
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer">Contact Us</li>
+            <li class="cursor-pointer">Services</li>
+        </ul>
+    </nav>
+    
+    <!-- Margin property -->
+    <div class="mb-5">This has bottom margin</div>
+    <div class="ml-5">This has left margin</div>
+    <span class="mr-5">This has right margin</span>
+    <a class="no-underline text-black" href="https://www.google.com">Google</a>
+    <div class="mt-5">This has top margin</div>
+    <div >
+        <div class="bg-red-600  w-36 rounded-b-lg mx-8 my-1 h-16 p-5 text-white">
+            It's a division
+            <!-- 'rounded-b-lg': Applies large rounding to the bottom corners -->
+        </div>
+        <div class="bg-amber-400 w-36 rounded-tl-lg mx-8 my-1 h-16 p-5 text-white">
+            It's a division
+             <!-- 'rounded-tl-lg': Applies large rounding to the top-left corner -->
+        </div><div class="bg-lime-500 w-36 rounded-se-xl mx-8 my-1 h-16 p-5 text-white">
+            It's a division
+            <!-- 'rounded-se-xl': Applies extra-large rounding to the bottom-end corner (depends on text direction) -->
+        </div>
+    </div>
+    <div class="border bg-fuchsia-400  w-36 rounded border-fuchsia-900 mx-8 my-1 h-16 p-5 text-white">
+       division here!
+    </div>
+</body>
+</html>
