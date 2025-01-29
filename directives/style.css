@@ -34,9 +34,3 @@
     }
 
 }
-/* @apply Directive:
-The @apply directive allows you to use Tailwind's utility classes inside a CSS rule.
-It helps keep styles organized and reusable, similar to writing traditional CSS but using Tailwind classes.
-@layer Directive:
-The @layer directive defines styles within specific layers (base, components, utilities).
-It ensures that styles are correctly applied in Tailwind’s processing order. */

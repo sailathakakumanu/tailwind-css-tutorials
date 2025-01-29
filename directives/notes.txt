@@ -1,0 +1,38 @@
+ @apply Directive:
+The @apply directive allows you to use Tailwind's utility classes inside a CSS rule.
+It helps keep styles organized and reusable, similar to writing traditional CSS but using Tailwind classes.
+@layer Directive:
+The @layer directive defines styles within specific layers (base, components, utilities).
+It ensures that styles are correctly applied in Tailwind’s processing order. 
+
+
+When to Use @layer and @apply in Tailwind CSS?
+Use @layer When:
+You want to define styles within Tailwind’s processing order (base, components, utilities).
+You need to ensure styles are preserved after Tailwind generates utility classes.
+Example:
+
+@layer components {
+    .btn {
+        @apply bg-blue-500 text-white px-4 py-2 rounded;
+    }
+}
+✅ Ensures .btn is part of the components layer.
+Use @apply When:
+You want to reuse Tailwind utility classes inside a CSS rule.
+You need to keep styles consistent while avoiding inline utility classes.
+Example:
+
+.btn {
+    @apply bg-blue-500 text-white px-4 py-2 rounded;
+}
+✅ Applies Tailwind utilities directly without needing @layer.
+Key Rule:
+Use @apply for individual class styling.
+Use @layer when organizing styles inside Tailwind’s layers (base, components, utilities).
+
+
+
+
+
+
