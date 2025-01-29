@@ -1,0 +1,27 @@
+@tailwind base; 
+@tailwind components;
+
+/* 
+ * Defining the `.btn1` class after `@tailwind base` and `@tailwind components`:
+ * - This style will only apply to the `base` and `components` layers, 
+ *   but not to the `utilities` layer.
+ * - As a result, `.btn1` may not behave as expected if it depends on utility classes.
+ */
+/* .btn1 {
+    @apply text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900;
+} */
+
+@tailwind utilities;
+
+/* 
+ * Defining the `.btn1` class after `@tailwind utilities`:
+ * - This ensures the `.btn1` class is applied to all layers (base, components, and utilities).
+ * - It guarantees proper functioning of all Tailwind utilities included in the class definition.
+ * - Place your custom styles here for full compatibility with the entire Tailwind CSS structure.
+ */
+.btn1 {
+    @apply text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900;
+}
+/* @tailwind base: Adds global styles and resets for consistent rendering across browsers.
+@tailwind components: Includes pre-built reusable styles for components like buttons, cards, etc.
+@tailwind utilities: Provides individual utility classes for styling elements directly (e.g., bg-red-500, text-center). */
